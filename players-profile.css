@@ -69,9 +69,9 @@
     transition: all 0.6s ease; 
 }
 
-.players-profile .players .player-A:hover .row-container-1,
-.players-profile .players .player-B:hover .row-container-1,
-.players-profile .players .player-C:hover .row-container-1 {
+.players-profile .players .player-A:hover .row-container,
+.players-profile .players .player-B:hover .row-container,
+.players-profile .players .player-C:hover .row-container {
     bottom: 10px;
 }
 
@@ -193,7 +193,7 @@
     transition: bottom 2.5s ease; 
 }
 
-.players-profile .row-container-1 {
+.players-profile .row-container {
     font-size: 20px;
     font-weight: 700;
     color: rgb(255, 255, 255);
@@ -206,7 +206,7 @@
     bottom: -60px; 
     transform: translateX(-50%);
     transition: bottom 0.6s ease; 
-    left: 37%;
+    left: 50%;
 }
 
 
@@ -302,12 +302,13 @@
         display: none;
     }
     
-    .mobile-only {
-        display: block;
+    .players-profile .carousel-control-prev,
+    .players-profile .carousel-control-next {
+        width: 10%;
     }
     
-    .carousel-control-prev-icon,
-    .carousel-control-next-icon {
+    .players-profile .carousel-control-prev-icon,
+    .players-profile .carousel-control-next-icon {
         background-color: rgba(0, 0, 0);
         opacity: 0.5;
         border-radius: 24px;
@@ -321,10 +322,9 @@
 
     /* Integrated hover styles */
 
-    .carousel-inner .text-1,
-    .carousel-inner .text-2 {
+    .players-profile .carousel-inner .text-1,
+    .players-profile .carousel-inner .text-2 {
         position: absolute;
-        top: 73%;
         left: 50%;
         transform: translateX(-50%);
         z-index: 3; 
@@ -336,8 +336,8 @@
     }
 
     .carousel-inner .text-1 {
-        top: 77%;
-        font-size: 2SS4px;
+        top: 75%;
+        font-size: 24px;
         font-weight: 800;
     }
 
@@ -380,16 +380,16 @@
         text-align: center;
     }
 
-    .carousel-inner .player-A:hover .row-container-1,
-    .carousel-inner .player-B:hover .row-container-1,
-    .carousel-inner .player-C:hover .row-container-1 {
+    .carousel-inner .player-A:hover .row-container,
+    .carousel-inner .player-B:hover .row-container,
+    .carousel-inner .player-C:hover .row-container {
         bottom: 20px;
     }
 
     .carousel-inner .player-A:hover .text-1,
     .carousel-inner .player-B:hover .text-1,
     .carousel-inner .player-C:hover .text-1 {
-        top: 61%; 
+        top: 59%; 
     }
 
     .carousel-inner .player-A:hover .text-2,
@@ -413,6 +413,7 @@
     .carousel-inner .player-A:hover,
     .carousel-inner .player-B:hover,
     .carousel-inner .player-C:hover {
+        animation: boxShadowAnimation1 3s linear infinite;
         transform: scale(1.05);
         transition: transform 0.8s;
     }

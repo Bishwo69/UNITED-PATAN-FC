@@ -301,36 +301,9 @@
     .players-profile .players {
         display: none;
     }
-
-    .carousel-indicators .line-indicator {
-        width: 40px;
-        height: 3px;
-        background-color: rgb(161, 27, 27);
-        opacity: 0.5;
-        cursor: pointer;
-        border-radius: 10px;
-        margin-bottom: -30px; 
-    }
-    
-    .carousel-indicators {
-        position: relative; 
-        bottom: initial; 
-        display: flex;
-        justify-content: center; 
-        gap: 0px; 
-    }
-    
-    .carousel-indicators .active {
-        opacity: 1;
-    }
     
     .mobile-only {
         display: block;
-    }
-    
-    .carousel-control-prev,
-    .carousel-control-next {
-        width: 10%;
     }
     
     .carousel-control-prev-icon,

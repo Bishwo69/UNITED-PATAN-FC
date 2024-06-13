@@ -33,3 +33,7 @@ document.querySelectorAll('.second-nav a').forEach(anchor => {
         });
     });
 });
+
+// Initialize the carousel
+var myCarousel = document.querySelector('#carouselExampleIndicators')
+var carousel = new bootstrap.Carousel(myCarousel)

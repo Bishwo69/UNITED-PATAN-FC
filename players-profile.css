@@ -206,7 +206,7 @@
     bottom: -60px; 
     transform: translateX(-50%);
     transition: bottom 0.6s ease; 
-    left: 30%;
+    left: 0;
 }
 
 

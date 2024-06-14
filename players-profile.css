@@ -216,7 +216,7 @@
     .players-profile {
         padding: 50px 10px;
         box-sizing: border-box;
-        overflow: hidden;
+        /* overflow: hidden; */
     }
 
     .carousel-inner .player-A,

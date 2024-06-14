@@ -412,7 +412,7 @@
     .carousel-inner .player-A:hover,
     .carousel-inner .player-B:hover,
     .carousel-inner .player-C:hover {
-        transform: scale(1.05);
+        transform: scale(1.03);
         transition: transform 0.8s;
     }
 

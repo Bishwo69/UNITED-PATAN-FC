@@ -106,15 +106,18 @@ body {
     font-size: 16px;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
+    transition: width 0.5s, justify-content 0.5s;
 }
 
 .search-box i {
     margin-left: 10px;
 }
- 
+
 .search-box:hover {
     width: 250px;
-    transition: width 0.5s;
+    justify-content: flex-end;
+    padding-right: 20px;
+
 }
 
 /* For second bar */

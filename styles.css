@@ -257,10 +257,9 @@ nav ul li a {
 }
 
 .signup-box {
-    width: 200px;
-    height: 80px;
+    width: 180px;
+    height: 70px;
     background-color:rgb(255, 255, 255);
-    /* background-color: rgba(0,33,94); */
     border-radius: 50px;
     display: flex;
     align-items: center;
@@ -278,6 +277,11 @@ nav ul li a {
     margin-left: 15px;
 }
 
+.signup-box a {
+    color: rgba(252, 51, 1);
+    text-decoration: none;
+}
+
 .signup-box:hover {
     transform: scale(1.08);
     transition: transform 0.5s;
@@ -291,12 +295,16 @@ nav ul li a {
     font-weight: 400;
     font-style: normal;
     font-size: 14px;
-    text-decoration: underline;
     opacity: 0.5;
 }
 
-.login-box:hover{
-    color: rgb(255, 197, 90);
+.banner .login-box a{
+    color: #007bff;
+    text-decoration: none;
+}
+
+.banner .login-box a:hover {
+    text-decoration: underline;
 }
 
 
@@ -321,7 +329,6 @@ nav ul li a {
     text-align: center;
     margin-top: 30px;
     padding-bottom: 20px;
-    /* font-weight: bold; */
     font-size: large;
     text-decoration-skip-ink: none;
     text-underline-offset: 10px; 
@@ -335,7 +342,6 @@ nav ul li a {
     top: 810px;
     margin-left: 560px;
     z-index: 1;
-    /* margin-right: 130px; */
 }
 .rectangle2 .text1 {
     font-family: "Poppins", sans-serif;
@@ -527,7 +533,6 @@ nav ul li a {
     display: flex;
     align-items: center;
     justify-content: center;
-    /* font-weight: bold; */
     font-size: 16px;
     color:rgb(255, 255, 255);
     cursor: pointer;
@@ -541,6 +546,12 @@ nav ul li a {
 .ticket-info-box i {
     margin-left: 15px;
 }
+
+.ticket-info-box:hover {
+    transform: scale(1.09);
+    transition: transform 0.7s;
+}
+
 .rectangle1 .patanunitedlogo {
     width: 120px;
     height: 110px;
@@ -549,7 +560,7 @@ nav ul li a {
     background-position: center;
     position: absolute;
     top: 50%;
-    left: 10px; /* Adjust as needed */
+    left: 10px; 
     transform: translateY(-50%);
     align-items: center;
 }
@@ -581,6 +592,7 @@ nav ul li a {
     font-size: 24px;
     color: rgb(255, 255, 255);
     font-family: "Poppins", sans-serif;
+    animation: borderColorChange 3s infinite alternate;
 }
 .rectangle1 .manunited-text {
     font-family: "Poppins", sans-serif;
